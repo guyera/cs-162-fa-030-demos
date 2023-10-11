@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int* create_new_integer() {
+int create_new_integer() {
 	int* x = new int;
 	*x = 5;
 	return x;
