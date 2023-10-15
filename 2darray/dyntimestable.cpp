@@ -8,7 +8,21 @@ using namespace std;
 // in memory simultaneously). Then print it neatly.
 
 void populate(int** array, int m, int n) {
+	for (int i = 0; i < m; i++) {
+		for (int j = 0; j < n; j++) {
+			int product = (i + 1) * (j + 1);
+			array[i][j] = product;
+		}
+	}
+}
 
+void print(int** array, int m, int n) {
+	for (int i = 0; i < m; i++) {
+		for (int j = 0; j < n; j++) {
+			cout << array[i][j] << "\t";
+		}
+		cout << endl;
+	}
 }
 
 int main() {
@@ -22,19 +36,8 @@ int main() {
 		array[i] = new int[n];
 	}
 
-	for (int i = 0; i < m; i++) {
-		for (int j = 0; j < n; j++) {
-			int product = (i + 1) * (j + 1);
-			array[i][j] = product;
-		}
-	}
-
-	for (int i = 0; i < m; i++) {
-		for (int j = 0; j < n; j++) {
-			cout << array[i][j] << " ";
-		}
-		cout << endl;
-	}
+	populate(array, m, n);
+	print(array, m, n);
 
 	// Delete the array "inside out"---delete the inner arrays, THEN the outer array
 	for (int i = 0; i < m; i++) {
