@@ -11,8 +11,16 @@ using namespace std;
 // we create it in main() and pass it by reference. Here, we just call
 // .open() on it to tell it which file to use.
 void get_file(ifstream& my_ifstream) {
-	// TODO Ask the user for a filename until they give you one that
+	// Ask the user for a filename until they give you one that
 	// we can open successfully
+
+	do {
+		cout << "Enter the name of the file: ";
+		string filename;
+		cin >> filename;
+		my_ifstream.clear();
+		my_ifstream.open(filename);
+	} while(my_ifstream.fail());
 }
 
 int main() {
