@@ -4,6 +4,12 @@
 
 using namespace std;
 
-// TODO define the name mutator
+// define the name mutator
+void person::set_name(string new_name) {
+	name = new_name;
+}
 
-// TODO define the name accessor
+// define the name accessor
+string person::get_name() {
+	return name;
+}
