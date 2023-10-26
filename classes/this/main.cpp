@@ -21,4 +21,8 @@ int main() {
 	// the same thing---their respective memory addresses
 	joe.print_this();
 	sally.print_this();
+
+	person* p = &joe;
+	(*p).set_name("Joseph");
+	p->set_name("Joseph");
 }

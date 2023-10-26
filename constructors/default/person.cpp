@@ -9,8 +9,10 @@ using namespace std;
 // `person::`. It's a constructor, so it's called
 // `person`. It has no parameters.
 person::person() {
-	// TODO Initialize first_name to "John" and last_name
+	// Initialize first_name to "John" and last_name
 	// to "Doe"
+	first_name = "Joe";
+	last_name = "Schmoe";
 }
 
 void person::set_first_name(const string& first_name) {

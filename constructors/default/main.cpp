@@ -5,7 +5,12 @@ int main() {
 	// constructor gets called. So john's name will
 	// be "John Doe"
 	person john;
+	person sally;
+
+	john.set_first_name("John");
+	
 	john.greet();
+	/*
 
 	// This will call the default constructor again
 	// to initialize sally. So sally's name will also
@@ -17,4 +22,5 @@ int main() {
 	sally.set_first_name("Sally");
 	sally.set_last_name("Whiting");
 	sally.greet();
+	*/
 }

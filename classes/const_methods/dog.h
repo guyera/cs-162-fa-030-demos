@@ -8,19 +8,19 @@ class dog {
 private:
 	string name;
 public:
-	// TODO What are we missing?
-	string get_name();
-	
+	// What are we missing?
+	string get_name() const;
+
 	// This method is a mutator. It
 	// cannot be marked as constant,
 	// or else dog.cpp will fail to
 	// compile.
 	void set_name(string);
-	
+
 	// This function will simply print,
 	// "Bark! Bark! My name is <name>!"
-	// to the console. TODO What are we missing?
-	void speak();
+	// to the console.
+	void speak() const;
 };
 
 #endif

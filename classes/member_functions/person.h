@@ -11,7 +11,7 @@ private:
 public:
 	// Set the person's private name variable to the specified string value
 	// mutator
-	void set_name(string name);
+	void set_name(string new_name);
 
 	// Retrieve (return) the value of the person's private name variable
 	// accessor

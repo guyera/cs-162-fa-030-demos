@@ -5,7 +5,6 @@
 using namespace std;
 
 void person::set_name(string name) {
-	// (*this).name = name;
 	this->name = name;
 }
 
