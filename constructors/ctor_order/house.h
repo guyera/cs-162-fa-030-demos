@@ -4,13 +4,13 @@
 #include "wall.h"
 
 class house {
+public:
+	house();
 private:
 	wall north_wall;
 	wall east_wall;
 	wall south_wall;
 	wall west_wall;
-public:
-	house();
 };
 
 #endif

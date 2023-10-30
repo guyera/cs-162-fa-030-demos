@@ -12,6 +12,7 @@ private:
 	int age;
 public:
 	person(int age);
+	person();
 	void greet() const;
 };
 

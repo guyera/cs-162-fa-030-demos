@@ -13,8 +13,12 @@ wall::wall() {
 	cout << "The default wall constructor is being called" << endl;
 }
 
-// TODO We now need to provide a nondefault wall constructor that
+// We now need to provide a nondefault wall constructor that
 // allows us to specify the width and height of the wall.
+wall::wall(double width, double height) {
+	this->width = width;
+	this->height = height;
+}
 
 
 // Here's the print functioN:

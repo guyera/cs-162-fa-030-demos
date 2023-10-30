@@ -11,6 +11,8 @@ using namespace std;
 // in the header file
 person::person(int age) : age(age) {}
 
+person::person() : age(24) {}
+
 void person::greet() const {
 	cout << "Hello! I'm "
 		<< name << ", and I'm "
