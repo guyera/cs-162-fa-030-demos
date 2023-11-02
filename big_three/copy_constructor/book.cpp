@@ -44,8 +44,9 @@ book::~book() {
 book::book(const book& existing_book)
 		: n_pages(existing_book.n_pages),
 		pages(new page[existing_book.n_pages]) {
+	// At this point, second_book (this book) has a dynamic
+	// array of 5 EMPTY pages
 	for (int i = 0; i < n_pages; i++) {
-		// TODO one at a time, copy the existing_book's ith
-		// page into this book's ith page
+		pages[i] = existing_book.pages[i];
 	}
 }

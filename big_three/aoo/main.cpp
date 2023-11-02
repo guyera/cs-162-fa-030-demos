@@ -18,14 +18,19 @@ int main() {
 	// Declare second_book as a copy of first_book
 	book second_book = first_book;
 
+	// We never deleted second_book.pages!!!
+	second_book = first_book;
+
+	second_book = second_book;
+
 	// Modify first_book
 	first_book.write_page(1, "I dedicate this book to my mother");
-
-	// Reassign first_book to second_book
-	second_book = first_book;
 	
 	// Print second book's contents
 	second_book.print();
 
-	// TODO Test chain assignment
+	// Test chain assigment (works because our assigmment
+	// operator overload returns a reference to the book
+	// on the left)
+	book third_book = (second_book = first_book);
 }
