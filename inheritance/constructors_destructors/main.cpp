@@ -18,11 +18,4 @@ int main() {
 	// 6. The dog default constructor's body will execute,
 	//		printing "Default dog constructor"
 	dog d;
-
-	// Here, d will fall out of scope. This will:
-	// 1. Call the dog destructor on d, which will
-	// 		fully execute, printing "Dog destructor"
-	// 2. Automatically call the animal destructor on
-	// 		d, which will fully execute, printing
-	//		"Animal destructor".
 }

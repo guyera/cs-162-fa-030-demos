@@ -5,9 +5,10 @@
 
 class dog : public animal {
 private:
-	bool fixed = false;
+	bool fixed = true;
 public:
-	// TODO Nondefault dog constructor.
+	// Nondefault dog constructor.
+	dog(const string &name, bool fixed);
 
 	dog();
 	~dog();

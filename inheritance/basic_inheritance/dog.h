@@ -3,6 +3,9 @@
 
 #include "animal.h"
 
-// TODO Create a dog class that inherits from the animal class
+// Create a dog class that inherits from the animal class
+class dog : public animal {
+
+};
 
 #endif
