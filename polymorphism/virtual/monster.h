@@ -16,6 +16,8 @@ public:
 	void take_damage(int damage);
 	
 	void heal(int amount);
+
+	virtual ~monster();
 };
 
 #endif

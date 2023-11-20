@@ -22,3 +22,5 @@ void monster::take_damage(int damage) {
 void monster::heal(int amount) {
 	hp += amount;
 }
+
+monster::~monster(){}

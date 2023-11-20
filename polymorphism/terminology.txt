@@ -1,0 +1,15 @@
+Upcasting: Casting an object of a derived type to its base type (or any of its ancestor types)
+
+Object slicing: What happens when you upcast objects directly---the derived class's specific data gets "sliced off"
+
+Polymorphism:
+
+Binding: Looking at a function call, and deciding WHICH function to call
+
+Early binding: Binding that the compiler does
+/ Static dispatch
+
+Late binding: At runtime, based on the DYNAMIC TYPE of an object, decide which function should be called when we call a member function on it
+/ Dynamic dispatch
+
+Abstract class: Any class with one or more pure virtual functions. You cannot create instances of an abstract class
