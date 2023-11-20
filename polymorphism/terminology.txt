@@ -2,7 +2,7 @@ Upcasting: Casting an object of a derived type to its base type (or any of its a
 
 Object slicing: What happens when you upcast objects directly---the derived class's specific data gets "sliced off"
 
-Polymorphism:
+Polymorphism: A single variable being capable of representing one of multiple types of objects. In C++, this is done by upcasting pointers or references to avoid object slicing.
 
 Binding: Looking at a function call, and deciding WHICH function to call
 
