@@ -1,0 +1,3 @@
+Parametric polymorphism: Compile-time polymorphism that occurs whenever you have a class template that contains one or more template parameters that are typename values
+
+Class template: A class with "placeholders". Filling in those placeholders will give you a class. This is called "instantiating" the template
