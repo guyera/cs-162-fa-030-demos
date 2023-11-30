@@ -1,0 +1,7 @@
+Node: A small structure that represents an element in a linked list. Each node as a value and an EDGE
+
+Edge: A pointer that points to the next node in the linked list
+
+Head: The first node in the linked list
+
+Tail: The last node in the linked list

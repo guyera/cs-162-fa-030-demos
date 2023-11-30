@@ -1,0 +1,7 @@
+STL: Standard template library.
+	Offers you: Containers, algorithms, and some other things
+	Container: <vector>, <map>, <set>, <multiset>, <list>
+
+Data structure: A way of structuring data. Organization, and an interface that lets you manipulate that data
+
+Random access / direct access: The ability to access an element in the "middle" of a container instantly
