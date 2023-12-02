@@ -6,7 +6,7 @@ struct node {
 	node* next;
 };
 
-void append_value(node *head, int val) {
+void push_back(node *head, int val) {
 	node* new_node = new node;
 	new_node->next = nullptr;
 	new_node->val = val;
@@ -16,6 +16,12 @@ void append_value(node *head, int val) {
 		itr = itr->next;
 	}
 	itr->next = new_node;
+}
+
+void pop_front(node*& head) {
+	node* second_element = head->next;
+	delete head;
+	head = second_element;
 }
 
 #endif

@@ -1,0 +1,1 @@
+Recursion: When a function or sequence of functions "calls itself".
